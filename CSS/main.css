@@ -1,10 +1,15 @@
 /* Fonts libraries */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+:root{
+    --main-font: "Open Sans Condensed", cursive;
+    --secondary-font:"Bangers", cursive;
+}
 h1{
-    font-family:"Bangers", cursive;
-    font-size:3em;
-    font-weight: 100;
+    font-family:var(--secondary-font);
+    font-weight:100;
+}
+p{
+    font-family:var(--main-font);
 }
 
 img{
