@@ -14,6 +14,7 @@ p{
 
 img{
     width:30%;
-    height:100vh;
+    height:60vh;
     object-fit:cover;
+    margin: 10px;
 }
