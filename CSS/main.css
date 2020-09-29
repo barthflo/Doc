@@ -9,7 +9,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 :root{
     --main-font: "Poiret One", cursive;
     --h1:"Dodger";
@@ -29,5 +28,9 @@ footer{
 h1{
     font-family: var(--h1);
     font-size:2em;
+<<<<<<< HEAD
 >>>>>>> efc01a037cca32fd00f50264f8a57b26fd23f078
 }
+=======
+}
+>>>>>>> 5ccc2aa075fb03aa37b78fbe8446269a54652d3d
