@@ -1,0 +1,13 @@
+p{
+    background-color: chartreue;
+    font-family: var(--secondary-font);
+}
+#profile{
+    display: flex;
+    flex-direction: left;
+}
+img{
+    width: 25%;
+    padding: 20px;
+    border-radius: 10%;
+}
