@@ -1,4 +1,5 @@
 /* Fonts libraries */
+@import "contact.css";
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
 @font-face {
     font-family: 'Dodger';
