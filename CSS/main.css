@@ -18,3 +18,8 @@
     --light: #fff1e1; 
     --dark : #1d3c45;
 }
+
+h1{
+    font-family: var(--h1);
+    font-size:2em;
+}
