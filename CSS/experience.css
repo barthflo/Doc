@@ -1,0 +1,26 @@
+/* Code Manuel 
+*/ 
+
+.fontXp {
+    
+    font-family: var(--main-font);
+    text-align: center;
+    justify-content: center;
+    width: 45%;
+    line-height: 32px;
+    letter-spacing: 2px;
+    /*border: 1px solid black;*/
+
+}
+    
+
+.diplomesTitle {
+    justify-content: center;
+
+}
+ 
+
+.competencesTitle {
+    justify-content: center;
+}
+
