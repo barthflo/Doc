@@ -18,17 +18,7 @@
     --dark : #1d3c45;
 }
 
-img{
-    /*width:30%;
-    height:70vh;*/
-    object-fit:cover;
-    margin: 10px;
+h1{
+    font-family: var(--h1);
+    font-size:2em;
 }
-header{
-    border: 2px solid black;
-    margin: 1;
-    padding: 5px;
-    background-color: burlywood;
-    
-}
-
