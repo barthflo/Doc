@@ -19,9 +19,15 @@
     --dark : #1d3c45;
 }
 
+<<<<<<< HEAD
 
 
 footer{
     background-color: indigo;
     font-family: var(--main-font);
+=======
+h1{
+    font-family: var(--h1);
+    font-size:2em;
+>>>>>>> efc01a037cca32fd00f50264f8a57b26fd23f078
 }
