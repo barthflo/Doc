@@ -1,3 +1,4 @@
+@import "header.css";
 /* Fonts libraries */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
 @font-face {
@@ -9,6 +10,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 :root{
     --main-font: "Poiret One", cursive;
     --h1:"Dodger";
@@ -18,19 +21,7 @@
     --dark : #1d3c45;
 }
 
-<<<<<<< HEAD
 
 
-footer{
-    background-color: indigo;
-    font-family: var(--main-font);
-=======
-h1{
-    font-family: var(--h1);
-    font-size:2em;
-<<<<<<< HEAD
->>>>>>> efc01a037cca32fd00f50264f8a57b26fd23f078
-}
-=======
-}
->>>>>>> 5ccc2aa075fb03aa37b78fbe8446269a54652d3d
+
+
