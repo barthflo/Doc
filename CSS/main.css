@@ -18,3 +18,10 @@
     --light: #fff1e1; 
     --dark : #1d3c45;
 }
+
+
+
+footer{
+    background-color: indigo;
+    font-family: var(--main-font);
+}
