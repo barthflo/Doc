@@ -1,19 +1,20 @@
 /* Fonts libraries */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
-:root{
-    --main-font: "Open Sans Condensed", cursive;
-    --secondary-font:"Bangers", cursive;
-}
-h1{
-    font-family:var(--secondary-font);
-    font-weight:100;
-}
-p{
-    font-family:var(--main-font);
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
+@font-face {
+    font-family: 'Dodger';
+    src:url('/Assets/webfonts_Dodger/Dodger.ttf.woff') format('woff'),
+        url('/Assets/webfonts_Dodger/Dodger.ttf.svg#Dodger') format('svg'),
+        url('/Assets/webfonts_Dodger/Dodger.ttf.eot'),
+        url('/Assets/webfonts_Dodger/Dodger.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
-img{
-    width:30%;
-    height:100vh;
-    object-fit:cover;
+:root{
+    --main-font: "Poiret One", cursive;
+    --h1:"Dodger";
+    --secondary-font: "Righteous", cursive;
+    --main-color: #dc1873;
+    --light: #fff1e1; 
+    --dark : #1d3c45;
 }
