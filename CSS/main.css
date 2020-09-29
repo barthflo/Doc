@@ -16,21 +16,15 @@
     --main-color: #dc1873;
     --light: #fff1e1; 
     --dark : #1d3c45;
+    --spacing : 8px;
+    --spacing-medium : calc(var(--spacing) * 2);
+    --spacing-large : calc(var(--spacing) * 4);
 }
 
-<<<<<<< HEAD
-
-
-footer{
-    background-color: indigo;
-    font-family: var(--main-font);
-=======
-h1{
-    font-family: var(--h1);
-    font-size:2em;
-<<<<<<< HEAD
->>>>>>> efc01a037cca32fd00f50264f8a57b26fd23f078
+* {
+    box-sizing:border-box;
 }
-=======
+
+body{
+    margin : 0;
 }
->>>>>>> 5ccc2aa075fb03aa37b78fbe8446269a54652d3d
