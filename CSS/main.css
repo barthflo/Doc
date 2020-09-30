@@ -1,4 +1,5 @@
 @import "footer.css";
+@import "header.css";
 /* Fonts libraries */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
 @font-face {
@@ -16,8 +17,8 @@
     --h1:"Dodger";
     --secondary-font: "Righteous", cursive;
     --main-color: #dc1873;
-    --light: #fff1e1; 
-    --dark : #1d3c45;
+    --light: #fdf7ef; 
+    --dark : #122429;
     --spacing : 8px;
     --spacing-medium : calc(var(--spacing) * 2);
     --spacing-large : calc(var(--spacing) * 4);
@@ -30,3 +31,8 @@
 body{
     margin : 0;
 }
+
+section {
+    min-height: 100vh;
+}
+
