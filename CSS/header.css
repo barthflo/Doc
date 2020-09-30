@@ -6,7 +6,7 @@ header{
     border-bottom: var(--spacing) solid var(--main-color);
     background : var(--dark);
     position:fixed;
-    width:100%;
+    width: 100%;
 }
 
 header h1{

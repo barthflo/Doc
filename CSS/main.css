@@ -1,6 +1,8 @@
+@import "header.css";
 @import "experience.css";
-
 @import "footer.css";
+
+
 /* Fonts libraries */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
 @font-face {
@@ -25,5 +27,17 @@
     --spacing-large : calc(var(--spacing) * 4);
 }
 
-/* Code Manuel */
+*{
+    box-sizing:border-box;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width:100vw;
+    height:100vh;
+    min-height:100vh;
+}
