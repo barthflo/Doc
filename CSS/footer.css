@@ -68,3 +68,10 @@ body {
     padding-top: 16px;
 }
 
+.atom {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 64px;
+}
+
