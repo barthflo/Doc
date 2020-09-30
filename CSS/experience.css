@@ -1,21 +1,42 @@
 /* Code Manuel 
 */ 
 
+/* Code pour l'ensemble CSS */
+
+
+
+* {
+    margin : 0px;
+}
+
+
+
+
+
+
+/* Code pour les paragraphes */
+
 .fontXp {
-    
     font-family: var(--main-font);
     text-align: center;
     justify-content: center;
     letter-spacing: 2px;
-    
-    
-
+    padding: 8px;
 }
+
+
+
+
 
 .textDiplomes {
     border: 1px solid black ;
+    font-family: var(--main-font);
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    padding: 8px;
 }
-    
+
 
 .expertiseFont {
 
@@ -24,29 +45,52 @@
     justify-content: center;
     letter-spacing: 2px;
     border: 1px solid black;
+    padding: 8px;
+   
+   
+
+
+}
+      
+      
+
+
+    /* Code pour les titres */
+
+    .competencesTitle {
+        font-family: var(--main-font);
+        justify-content: center;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 16px;
+    }
+    
+    .diplomesTitle {
+        font-family: var(--main-font);
+        justify-content: center;
+        text-align: center;
+        padding-top: 32px;
+    
+    }
+     
     
 
 
-}
 
-.diplomesTitle {
-    font-family: var(--main-font);
-    justify-content: center;
-    text-align: center;
 
-}
- 
 
-.competencesTitle {
-    font-family: var(--main-font);
-    justify-content: center;
-    text-align: center;
-    padding: 16px;
-}
+
+
+    
+
+
 
 
 /* Fin code police*/
 
+
+
+/* Paramètres Flexboxs */
 
 .experience {
 
@@ -79,12 +123,6 @@
 }
 
 
- 
-    
-
-
-
-
 .delorean{
 
     display: flex;
@@ -100,41 +138,96 @@
     height: 300px;
     padding: 0px 0px 0px 0px;
     
+    
 }
 
 
+/* Media Queries pour responsive */
 
 
 
 
 
 
-    
-    
-/* Img = gif + image doc
 
-    img {
-        
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        
-        
-        
-    }
 
-    /* Delorean volante gif paramétrage 
+@media screen and (max-width: 425px) {
 
-    .delorean {
-        display: flex-start;
-        justify-content: center;
+    .experience {
         width: 100%;
     }
-    
-@media screen and (min-width: 360px  ) {
 
-    .delorean { 
-        text-align: center;
-        
+    .cometences {
+        width: 100%;
     }
+
+    .expertiseFont{
+        width: 100%;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+/* standard*/
+
+@media screen and (max-width: 768px) {
+
+    .experience {
+        width: 100%;
+    }
+
+    .cometences {
+        width: 100%;
+    }
+
+    .expertiseFont{
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+    
+
+
+/* Desktop*/
+
+
+@media screen and (max-width: 1024px) {
+
+    .experience {
+        width: 100%;
+    }
+
+    .cometences {
+        width: 100%;
+    }
+
+    .expertiseFont{
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+    
