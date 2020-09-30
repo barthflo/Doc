@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Main Styles -->
     <link rel="stylesheet" href="CSS/main.css">
     <!--Script pour ajouter des icons-->
-    <script src="https://kit.fontawesome.com/7aa17d357a.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/7aa17d357a.js" crossorigin="anonymous"></script>
     <title>CV Doc Emmet Brown</title>
-    
+
 </head>
+
 <body>
     <header>
-        <nav>
+        <article class="title">
             <h1>Dr. Emmett Brown</h1>
+            <p>Savant Fou</p>
+        </article>
+        <article class="menu-mobile-container">
+            <a href="#" class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div id="menu-mobile" class="hidden-desktop hidden">
+                <ul>
+                    <a href="#profile"><li>Profile</li></a>
+                    <a href="#experience"><li>Experiences</li></a>
+                    <a href="#competences"><li>Competences</li></a>
+                    <a href="#education"><li>Etudes</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </div>
+        </article>
+     
+        <nav id="menu-desktop" class="hidden-mobile">
+            <ul>
+                <a href="#profile"><li>Profile</li></a>
+                <a href="#experience"><li>Experiences</li></a>
+                <a href="#competences"><li>Competences</li></a>
+                <a href="#education"><li>Etudes</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="profile">  
+        <section id="profile">
         </section>
         <section id="experience"></section>
         <section id="education"></section>
@@ -26,5 +56,9 @@
     <footer>
 
     </footer>
+
+    <!-- Scripts -->
+    <script src="/JS/header.js"></script>
 </body>
+
 </html>
