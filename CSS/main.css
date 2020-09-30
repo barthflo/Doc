@@ -1,14 +1,15 @@
+@import "experience.css";
+
 @import "footer.css";
-@import "header.css";
 /* Fonts libraries */
 @import "contact.css";
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
 @font-face {
     font-family: 'Dodger';
     src:url('/Assets/webfonts_Dodger/Dodger.ttf.woff') format('woff'),
-        url('/Assets/webfonts_Dodger/Dodger.ttf.svg#Dodger') format('svg'),
-        url('/Assets/webfonts_Dodger/Dodger.ttf.eot'),
-        url('/Assets/webfonts_Dodger/Dodger.ttf.eot?#iefix') format('embedded-opentype'); 
+    url('/Assets/webfonts_Dodger/Dodger.ttf.svg#Dodger') format('svg'),
+    url('/Assets/webfonts_Dodger/Dodger.ttf.eot'),
+    url('/Assets/webfonts_Dodger/Dodger.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -25,15 +26,5 @@
     --spacing-large : calc(var(--spacing) * 4);
 }
 
-* {
-    box-sizing:border-box;
-}
-
-body{
-    margin : 0;
-}
-
-section {
-    min-height: 100vh;
-}
+/* Code Manuel */
 
