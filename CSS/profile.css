@@ -19,6 +19,7 @@
 }
 .text{
     text-align: center;
+    
 }
 #profile img{
     width: 100%;
@@ -43,10 +44,12 @@ h2{
     }
     p {
         text-align: justify;
+
     }
     .text{
         padding: 0 var(--spacing-medium);
-        width: 150%;
+        width: 160%;
+        
     }
     #profile img {
         height: 100%;
