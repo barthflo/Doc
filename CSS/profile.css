@@ -19,6 +19,7 @@
 }
 .text{
     text-align: center;
+    
 }
 #profile img{
     width: 100%;
@@ -43,16 +44,18 @@ h2{
     }
     p {
         text-align: justify;
+
     }
     .text{
         padding: 0 var(--spacing-medium);
+        width: 160%;
+        
     }
     #profile img {
         height: 100%;
         border: none;
         border-right: var(--spacing) solid rgb(255, 104, 142) ;
         border-radius: 0%;
-        width: 100%;
         padding: 0 var(--spacing) 0 0;
     }
 }
