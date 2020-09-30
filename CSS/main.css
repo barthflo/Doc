@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 @import "experience.css";
 
+=======
+@import "header.css";
+>>>>>>> 038bea60fc3d8666fb88f34039f86a88e6caac6b
 /* Fonts libraries */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
 @font-face {
@@ -12,13 +16,17 @@
     font-style: normal;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 038bea60fc3d8666fb88f34039f86a88e6caac6b
 :root{
     --main-font: "Poiret One", cursive;
     --h1:"Dodger";
     --secondary-font: "Righteous", cursive;
     --main-color: #dc1873;
-    --light: #fff1e1; 
-    --dark : #1d3c45;
+    --light: #fdf7ef; 
+    --dark : #122429;
     --spacing : 8px;
     --spacing-medium : calc(var(--spacing) * 2);
     --spacing-large : calc(var(--spacing) * 4);
@@ -26,3 +34,14 @@
 
 /* Code Manuel */
 
+<<<<<<< HEAD
+=======
+body{
+    margin : 0;
+}
+
+section {
+    min-height: 100vh;
+}
+
+>>>>>>> 038bea60fc3d8666fb88f34039f86a88e6caac6b
