@@ -29,12 +29,13 @@
 
 
 .textDiplomes {
-    border: 1px solid black ;
+    border: 1px solid black; 
     font-family: var(--main-font);
     text-align: center;
     justify-content: center;
     letter-spacing: 2px;
     padding: 8px;
+    margin: 8px 8px 8px 8px;
 }
 
 
@@ -46,6 +47,7 @@
     letter-spacing: 2px;
     border: 1px solid black;
     padding: 8px;
+    margin: 8px 8px 8px 8px;
    
    
 
