@@ -31,11 +31,11 @@ body {
     font-size: 32px;
     color: #551a8b;
     font-weight: bold;
-    
 }
 
 .hide {
     display: none;
+
 }
 
 .top {
@@ -45,4 +45,24 @@ body {
 }
 
 
+.question {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.answer { 
+    font-family: var(--main-font);
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.foire {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--main-font);
+}
 
