@@ -19,6 +19,9 @@
     --main-color: #dc1873;
     --light: #fff1e1; 
     --dark : #1d3c45;
+    --spacing : 8px;
+    --spacing-medium : calc(var(--spacing) * 2);
+    --spacing-large : calc(var(--spacing) * 4);
 }
 
 /* Code Manuel */
