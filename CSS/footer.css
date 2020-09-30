@@ -29,7 +29,13 @@ body {
     font-family: var(--main-font);
     text-align: center;
     font-size: 32px;
+    color: #551a8b;
+    font-weight: bold;
     
+}
+
+.hide {
+    display: none;
 }
 
 .top {
@@ -37,3 +43,6 @@ body {
     text-align: center;
     font-size: 32px;
 }
+
+
+
