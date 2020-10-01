@@ -22,7 +22,7 @@
 
 .title-faq {
     border: lightcoral;
-    background-color: lightcoral;
+    background-color: var(--main-color);
     width: 30%;
     font-family: var(--main-font);
     text-align: center;

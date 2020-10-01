@@ -44,8 +44,8 @@ section{
 }
 
 section:nth-child(even){
-    background:green;
+    background:rgba(0, 128, 0, 0.474);
 }
 section:nth-child(odd){
-    background:blue;
+    background:rgba(0, 0, 255, 0.542);
 }
