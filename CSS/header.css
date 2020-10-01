@@ -26,6 +26,7 @@ header p{
     color:var(--light);
     font-weight:500;
     margin:0;
+    padding-bottom : var(--spacing);
 }
 
 /* List items */
@@ -40,6 +41,7 @@ header li{
 }
 header a{
     text-decoration: none;
+    padding:var(--spacing);
     color:var(--light);
     transition: .1s ease-in-out;
 }
@@ -50,8 +52,27 @@ header a:hover{
 header h1 a{
     padding:0;
 }
+.infos-container{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    bottom:0;
+}
+
+.infos-container i{
+    padding-right: var(--spacing);
+}
+
 
 /* Hamburger mobile menu */
+.menu-mobile-container{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.hamburger{
+    margin-top:var(--spacing);
+}
 .hamburger span{
     display:block;
     width:30px;
@@ -68,12 +89,7 @@ header h1 a{
 .header-opacity{
     opacity:.9;
 }
-.menu-mobile-container{
-    width:30%;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-end;
-}
+
 
 
 /* Hidden and actions classes */
