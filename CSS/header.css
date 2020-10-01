@@ -11,28 +11,25 @@ header{
     width: 100%;
 }
 
+/* Typos */
 header h1{
     font-family:var(--h1);
     margin: 0;
     font-weight:100;
+    font-size:1.5em;
     color:var(--light);
+    width: max-content;
 }
 header p{
     font-family:var(--main-font);
     margin:var(--spacing) 0;
     color:var(--light);
     font-weight:500;
+    margin:0;
+    padding-bottom : var(--spacing);
 }
 
-
-.hamburger span{
-    display:block;
-    width:30px;
-    height: 3px;
-    margin : calc(var(--spacing)/2) 0;
-    background-color:var(--light);
-}
-
+/* List items */
 header ul{
     margin:0;
     padding:0;
@@ -44,6 +41,7 @@ header li{
 }
 header a{
     text-decoration: none;
+    padding:var(--spacing);
     color:var(--light);
     transition: .1s ease-in-out;
 }
@@ -51,20 +49,76 @@ header a:hover{
     color:var(--main-color);
     transition: .1s ease-in-out;
 }
+header h1 a{
+    padding:0;
+}
+.infos-container{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    bottom:0;
+}
 
+.infos-container i{
+    padding-right: var(--spacing);
+}
+
+
+/* Hamburger mobile menu */
+.menu-mobile-container{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.hamburger{
+    margin-top:var(--spacing);
+}
+.hamburger span{
+    display:block;
+    width:30px;
+    height: 3px;
+    margin : calc(var(--spacing)/2) 0;
+    padding:0;
+    background-color:var(--light);
+    transition: .2s ease-in;
+}
 .hidden-desktop{
     display: flex;
     flex-direction: column;
 }
+.header-opacity{
+    opacity:.9;
+}
+
+
+
+/* Hidden and actions classes */
 .hidden-mobile, .hidden{
     display:none;
 }
 
-.menu-mobile-container{
-    width:30%;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-end;
+.hamburger.change span:nth-child(1){
+    transform: rotate(45deg) translate(5px);
+    transition: .2s ease-in;
+    width:20px;
+}
+.hamburger.change span:nth-child(2){
+    width:0;
+    height:0;
+    transition: .2s ease-in;
+}
+.hamburger.change span:nth-child(3){
+    transform: rotate(-45deg) translate(4px);
+    transition: .2s ease-in;
+    width:20px;
+}
+
+
+
+@media screen and (min-width:426px){
+    header h1{
+        font-size:2em;
+    }
 }
 
 @media screen and (min-width:769px){
