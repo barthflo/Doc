@@ -6,8 +6,8 @@
 
 /* Fonts libraries */
 @import "contact.css";
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&display=swap');
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&family=MuseoModerno:wght@600&display=swap');
+/* @font-face {
     font-family: 'Dodger';
     src:url('/Assets/webfonts_Dodger/Dodger.ttf.woff') format('woff'),
     url('/Assets/webfonts_Dodger/Dodger.ttf.svg#Dodger') format('svg'),
@@ -15,13 +15,13 @@
     url('/Assets/webfonts_Dodger/Dodger.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 :root{
     --main-font: "Poiret One", cursive;
-    --h1:"Dodger";
+    --h1:"MuseoModerno", cursive;
     --secondary-font: "Righteous", cursive;
-    --main-color: #dc1873;
+    --main-color:rgb(255, 104, 142);
     --light: #fdf7ef; 
     --dark : #122429;
     --spacing : 8px;
@@ -39,9 +39,11 @@ body {
     padding: 0;
 }
 
+main{
+    padding : 0;
+}
 section{
     width:100%;
-    height:auto;
     min-height:100vh;
 }
 
