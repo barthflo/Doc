@@ -1,211 +1,89 @@
 
-/* Code pour les paragraphes */
+/* Code pour les paragraphes, ici paramètre main ajouté mais à enlever si merge */
 
-.fontXp {
+
+main { 
+    padding: 0px;
+    margin:0px;
+}
+
+/* Police paragraphs */
+
+.fontXp, .expertiseFont {
     font-family: var(--main-font);
     text-align: center;
     justify-content: center;
     letter-spacing: 2px;
-    /* padding: 8px; */
+    
 }
 
+/* Style des titres */
 
-
-
-
-.textDiplomes {
-    /* border: 1px solid black;  */
-    font-family: var(--main-font);
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    /* padding: 8px;
-    margin: 8px 8px 8px 8px; */
-}
-
-
-.expertiseFont {
-
-    font-family: var(--main-font);
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    /* border: 1px solid black; */
-    /* padding: 8px;
-    margin: 8px 8px 8px 8px; */
-   
-   
-
-
-}
-      
-      
-
-
-    /* Code pour les titres */
-
-    .competencesTitle {
+    .competencesTitle, .diplomesTitle {
         font-family: var(--main-font);
         justify-content: center;
         letter-spacing: 2px;
         text-align: center;
-        padding: 16px;
+        padding: 0px;
     }
     
-    .diplomesTitle {
-        font-family: var(--main-font);
-        justify-content: center;
-        text-align: center;
-        padding-top: 32px;
-    
-    }
-     
-    
-
-
-
-
-
-
-
-    
-
-
 
 
 /* Fin code police*/
 
 
-
-/* Paramètres Flexboxs */
+/* Bloc expérience */
 
 #experience {
-
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 var(--spacing);
-   
 }
 
-    .logos {
+
+
+/* Paramètres Flexboxs , le #experience doit passer en flex si on définit breakpoint*/
+
+.logos  {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+/* Media query, a supprimer si dispensable */
+ 
+@media screen and (max-width: 767px){
+
+    .logos  {
+
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
-        justify-content: space-between;
-        letter-spacing: 32px;
-        padding : 32px 32px 32px 32px;
-        height: auto;
-        
-        
-        
+        padding: 0px;
     }
 
-.logos i {
+   
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 16px 16px 16px 16px;
 }
 
-
-
+/* gif entre les sections*/
 
 .delorean img {
-    width: 150px;
-    height: 150px;
-    object-fit:cover;
+   
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        border-radius: 100%;
+      
     
     
 }
 
 
-/* Media Queries pour responsive */
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 425px) {
-
-    .experience {
-        width: 100%;
-    }
-
-    .cometences {
-        width: 100%;
-    }
-
-    .expertiseFont{
-        width: 100%;
-    }
-
-
-}
-
-
- */
-
-
-
-
-
-
-/* standard*/
-
-/* @media screen and (max-width: 768px) {
-
-    .experience {
-        width: 100%;
-    }
-
-    .cometences {
-        width: 100%;
-    }
-
-    .expertiseFont{
-        width: 100%;
-    }
-
-
-}
-
-
- */
-
-
-
-
-    
-
-
-/* Desktop*/
-
-
-/* @media screen and (max-width: 1024px) {
-
-    .experience {
-        width: 100%;
-    }
-
-    .cometences {
-        width: 100%;
-    }
-
-    .expertiseFont{
-        width: 100%;
-    }
-
-
-}
-
- */
-
-
-
-
-
-    
