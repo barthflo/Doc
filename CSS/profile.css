@@ -1,11 +1,6 @@
-*{
-    padding: 5px;
-}
 #profile{
     /* background-color: rgb(250, 199, 178); */
     border-radius: 10px;
-    min-height: 100vh; 
-    height: 100vh;
     background-image: url("Assets/docpicture.png");
     
    
