@@ -1,6 +1,6 @@
 
 .foot {
-    background-color: lightcoral;
+    background-color: var(--dark);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .title-faq {
-    border: lightcoral;
+    border: var(--main-color);
     background-color: var(--main-color);
     width: 30%;
     font-family: var(--main-font);

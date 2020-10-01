@@ -45,11 +45,16 @@ main{
 section{
     width:100%;
     min-height:100vh;
+    padding: 0 var(--spacing);
+    text-align:center;
 }
 
-/* section:nth-child(even){
-    background:green;
+h2, h3, h4, h5, h6{
+    font-family: var(--secondary-font);
+    color: rgb(255, 122, 14);
 }
-section:nth-child(odd){
-    background:blue;
-} */
+
+p, ul, ol, li, a{
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+}

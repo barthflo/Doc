@@ -7,39 +7,23 @@ main {
     margin:0px;
 }
 
-/* Police paragraphs */
-
-.fontXp, .expertiseFont {
-    font-family: var(--main-font);
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    
-}
-
-/* Style des titres */
-
-    .competencesTitle, .diplomesTitle {
-        font-family: var(--main-font);
-        justify-content: center;
-        letter-spacing: 2px;
-        text-align: center;
-        padding: 0px;
-    }
-    
-
-
-/* Fin code police*/
-
-
 /* Bloc expérience */
-
-#experience {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--spacing);
+#experience{
+    text-align:center;
 }
+
+.work-experience h3{
+    color: var(--dark);
+    text-align:left;
+}
+.delorean img { 
+    width: 200px;
+    height:200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
 
 
 
@@ -54,24 +38,14 @@ main {
     padding: 0px;
 }
 
-/* gif entre les sections*/
-
-.delorean img {
-   
-    
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        border-radius: 100%;
-        padding-top: 16px;
-      
-    
-    
+.expertiseFont p, .textDiplomes p{
+    text-align:center;
 }
+
+
 /* Media query, a supprimer si dispensable */
  
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px){
 
     .logos  {
 
@@ -82,10 +56,11 @@ main {
         padding: 0px;
     }
 
-   
-
-   
-
+    #experience{
+        display:flex;
+        justify-content:space-around;
+    }  
+    
 }
 
 
