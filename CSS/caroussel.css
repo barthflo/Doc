@@ -1,0 +1,62 @@
+/* A faire : titre et caroussel */
+
+/* - titre */
+
+.hobbies-title {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-top: 16px;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+
+
+/* - carousel */
+
+.slide-img {
+    display: none;
+}
+
+.hobbies-slide {
+    max-width: 1000px;
+    max-height: 320px;
+    position: relative;
+    margin: auto;
+
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.7s ease;
+}
+
+.active {
+    background-color: lightcoral;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
