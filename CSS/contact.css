@@ -27,7 +27,20 @@ h2 {
     font-family: "Righteous", cursive;
 }
 
+.form label {
+    color: var(--light);
+    font-family: var(--main-font);
+    padding-bottom: var(--spacing);
+    display: flex;
+    text-align: left;
+}
+
 .formulary:focus {
+    background-color: rgb(167, 211, 226);
+    color: white;
+}
+
+textarea:focus{
     background-color: rgb(167, 211, 226);
     color: white;
 }
@@ -61,12 +74,23 @@ button {
     box-shadow : calc(var(--spacing)/2) calc(var(--spacing)/2) var(--spacing-large) var(--dark);
 }
 
+.quote-card {
+    margin-bottom: var(--spacing-medium);
+    padding:0 var(--spacing-medium);
+}
+
+hr{
+    width: 25%;
+    color: var(--dark);
+    margin-bottom: var(--spacing-large);
+}
+
+
 .references h3, .references p{
     font-family: var(--main-font);
     text-align: center;
     color: var(--dark);
 }
-
 
 @media screen and (min-width: 769px){
     #contact {
@@ -79,9 +103,12 @@ button {
         width:50%;
     } 
     .quote-card{
-        padding:0 var(--spacing-medium);
         display:flex;
         justify-content:space-around;
+    }
+    .references h3, .references p{
+        font-family: var(--main-font);
+        text-align: left;
     }
 }
 
