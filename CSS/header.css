@@ -40,6 +40,7 @@ header li{
     text-align: right;
 }
 header a{
+    font-family:var(--h1);
     text-decoration: none;
     padding:var(--spacing);
     color:var(--light);

@@ -1,35 +1,18 @@
-#contact {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: stretch;
+#contact{
+    padding:0;
 }
 
-.contact_me {
-    background-color: white;
-    background-image: url("https://i.pinimg.com/originals/b5/f1/42/b5f14267e24ff4be9e6c4ccb62dd628f.jpg");
-    background-size: 100%;
-    padding-bottom: var(--spacing);
-    width: 50%;
+.contact-form{
+    background-color:var(--dark);
+    padding: var(--spacing-medium);
 }
-
-#contact_title {
-    text-align: left;
-}
-
 form {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 }
 
 h2 {
-    font-family: "Righteous", cursive;
-    font-size: 40px;
+    font-family: var(--secondary-font);
 }
 
 .formulary {
@@ -63,45 +46,43 @@ button {
     font-family: "Righteous", cursive;
     cursor: pointer;
     background-color: rgb(167, 211, 226);
-    color: white;
+    color: var(--light);
     border: solid rgb(167, 211, 226);
     border-radius: 150px;
     margin-left: 5px;
 }
 
-.references {
-    display: flex;
-    background-color: violet;
-    padding: 0 var(--spacing-medium);
-    border: 0 var(--spacing-medium);
-    width: 50%;
-    height: 100%;
-    align-items: center;
-    flex-direction: column;
 
+.references img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border: var(--spacing) solid var(--main-color);
+    box-shadow : calc(var(--spacing)/2) calc(var(--spacing)/2) var(--spacing-large) var(--dark);
 }
 
-.container_coat {
-    font-family: "Righteous", cursive;
-    display: flex;
-}
-
-.ref {
-    display: flex;
-    height: 130px;
-    width: 130px;
-    object-fit: cover;
-    padding: 0;
-    border-radius: 100%;
-    border: var(--spacing) var(--light) solid;
+.references h3, .references p{
+    font-family: var(--main-font);
+    text-align: center;
+    color: var(--dark);
 }
 
 
-@media screen and (max-width: 1024px){
-    .contact {
-        display: block;
-        width: 100%;
+@media screen and (min-width: 769px){
+    #contact {
+        display: flex;
+        justify-content : center;
+        align-items: stretch;
+        min-height: fit-content;
+    }
+    .contact-form{
+        width:50%;
     } 
+    .quote-card{
+        padding:0 var(--spacing-medium);
+        display:flex;
+        justify-content:space-around;
+    }
 }
 
 
