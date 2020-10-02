@@ -2,8 +2,8 @@
     color: black;
 }
 #competences p{
-    padding-left: 30%;
-    padding-right: auto;
-    text-align: center;
-    margin-left: 20px;
+    padding: 0 var(--spacing);
+}
+#competences h2{
+    padding-bottom: 20;
 }
