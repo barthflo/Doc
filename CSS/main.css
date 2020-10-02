@@ -2,27 +2,21 @@
 @import "header.css";
 @import "experience.css";
 @import "footer.css";
+@import "caroussel.css";
 @import "competences.css";
 
 
 /* Fonts libraries */
 @import "contact.css";
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&family=Poiret+One&family=Righteous&family=MuseoModerno:wght@600&display=swap');
-/* @font-face {
-    font-family: 'Dodger';
-    src:url('/Assets/webfonts_Dodger/Dodger.ttf.woff') format('woff'),
-    url('/Assets/webfonts_Dodger/Dodger.ttf.svg#Dodger') format('svg'),
-    url('/Assets/webfonts_Dodger/Dodger.ttf.eot'),
-    url('/Assets/webfonts_Dodger/Dodger.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-} */
+
 
 :root{
     --main-font: "Poiret One", cursive;
     --h1:"MuseoModerno", cursive;
     --secondary-font: "Righteous", cursive;
     --main-color:rgb(255, 104, 142);
+    --secondary-color: rgb(255, 122, 14);
     --light: #fdf7ef; 
     --dark : #122429;
     --spacing : 8px;
@@ -52,7 +46,7 @@ section{
 
 h2, h3, h4, h5, h6{
     font-family: var(--secondary-font);
-    color: rgb(255, 122, 14);
+    color: var(--secondary-color);
 }
 
 p, ul, ol, li, a{
