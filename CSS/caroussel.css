@@ -2,15 +2,11 @@
 
 /* - titre */
 
-.hobbies-title {
+#hobbie h2 {
     text-align: center;
     margin-bottom: 32px;
     padding-top: 16px;
-    text-decoration: underline;
     font-size: 32px;
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    color: var(--main-color);
 }
 
 
