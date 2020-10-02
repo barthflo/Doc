@@ -10,18 +10,36 @@ main {
 /* Bloc expérience */
 #experience{
     text-align:center;
+
 }
 
 .work-experience h3{
     color: var(--dark);
     text-align:left;
+}    
+.work-experience li {
+                 
+    text-align: start;
+    list-style: none;
+    letter-spacing: 2px;
+                    
 }
+
+.work-experience article {
+
+    height: auto;
+}
+                
+                
 .delorean img { 
-    width: 200px;
-    height:200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height:300px;
     border-radius: 100%;
-    object-fit: cover;
-}
+    
+}    
 
 
 
@@ -36,11 +54,11 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0px;
-}
+}    
 
 .expertiseFont p, .textDiplomes p{
     text-align:center;
-}
+}    
 
 
 /* Media query, a supprimer si dispensable */
@@ -54,16 +72,23 @@ main {
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0px;
-    }
+    }    
 
     #experience{
         display:flex;
         justify-content:space-around;
-    }  
+        min-height: auto;
+
+    }      
+
     
-}
+    
+}    
 
 
 
+
+
+/* Section Experience professionnelles */
 
 

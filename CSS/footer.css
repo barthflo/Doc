@@ -7,6 +7,10 @@
     align-items: center;
     width:100%;
 }
+.foot .fab, .foot .fas {
+    color:var(--main-color);
+    font-size: .5em;
+}
 
 .icons {
     display: flex;
@@ -26,7 +30,7 @@
     width: 30%;
     font-family: var(--main-font);
     text-align: center;
-    font-size: 32px;
+    font-size: 1em;
     color: #551a8b;
     font-weight: bold;
 }
