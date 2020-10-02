@@ -1,3 +1,7 @@
 #competences .titre{
     color: black;
 }
+#competences p{
+    padding-left: 30%;
+    padding-right: auto;
+}
