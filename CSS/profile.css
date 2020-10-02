@@ -1,21 +1,13 @@
 .text p{
     /* background-color: rgb(226, 218, 208); */
-    font-family: var(--main-font);
-    letter-spacing: 2px;
-    
+    font-family: var(--main-font)
 }
-#profile{
-    text-align: center;
-    
-}
+
 #profile img{
     width: 100%;
     object-fit: cover; 
 }
-h2{
-    font-family: var(--secondary-font);
-    color: rgb(255, 122, 14);
-}
+
 @media screen and (min-width: 426px){
     #profile img{
         width: 250px;

@@ -7,39 +7,41 @@ main {
     margin:0px;
 }
 
-/* Police paragraphs */
-
-.fontXp, .expertiseFont {
-    font-family: var(--main-font);
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    
-}
-
-/* Style des titres */
-
-    .competencesTitle, .diplomesTitle {
-        font-family: var(--main-font);
-        justify-content: center;
-        letter-spacing: 2px;
-        text-align: center;
-        padding: 0px;
-    }
-    
-
-
-/* Fin code police*/
-
-
 /* Bloc expérience */
+#experience{
+    text-align:center;
 
-#experience {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--spacing);
 }
+
+.work-experience h3{
+    color: var(--dark);
+    text-align:left;
+}    
+.work-experience li {
+                 
+    text-align: start;
+    list-style: none;
+    letter-spacing: 2px;
+                    
+}
+
+.work-experience article {
+
+    height: auto;
+}
+                
+                
+.delorean img { 
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height:300px;
+    border-radius: 100%;
+    
+}    
+
+
 
 
 
@@ -52,26 +54,16 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0px;
-}
+}    
 
-/* gif entre les sections*/
+.expertiseFont p, .textDiplomes p{
+    text-align:center;
+}    
 
-.delorean img {
-   
-    
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        border-radius: 100%;
-        padding-top: 16px;
-      
-    
-    
-}
+
 /* Media query, a supprimer si dispensable */
  
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px){
 
     .logos  {
 
@@ -80,15 +72,23 @@ main {
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0px;
-    }
+    }    
 
-   
+    #experience{
+        display:flex;
+        justify-content:space-around;
+        min-height: auto;
 
-   
+    }      
 
-}
+    
+    
+}    
 
 
 
+
+
+/* Section Experience professionnelles */
 
 
