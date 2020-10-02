@@ -23,7 +23,9 @@
     font-size: 32px;
 
 }
-
+#faq{
+    background-color:var(--main-color);
+}
 .title-faq {
     border: var(--main-color);
     background-color: var(--main-color);
