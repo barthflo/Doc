@@ -1,6 +1,6 @@
 const hamburger= document.getElementById("hamburger");
 const menuMobile = document.getElementById("menu-mobile");
-const sectionProfile = document.getElementById("profile");
+const main = document.querySelector("main");
 
 hamburger.addEventListener('click', () =>{
     if(menuMobile.classList.contains('hidden')){
@@ -18,4 +18,4 @@ hamburger.addEventListener('click', () =>{
     }
 })
 
-sectionProfile.style.marginTop = document.querySelector("header").offsetHeight + "px";
+main.style.marginTop = document.querySelector("header").offsetHeight + "px";
