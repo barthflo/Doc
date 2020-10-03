@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax test</title>
+    <style>
+
+        .paralax-wrapper{
+            position:relative;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;    
+            background-image: url('/Assets/timetravel1.png');
+        }
+    
+        #paralax2{
+            background-image: url('/Assets/timetravel2.png');
+        }
+        section{
+            position:relative;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        #section1, #section3{
+            background:white;
+        }
+        .content{
+            height:80%;
+            background:white;
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+        h1{
+            color:black;
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <div id=#paralax1 class="paralax-wrapper" >
+            <section id=section1>
+                <h1>I am some text</h1>
+            </section>
+            <section id="section2">
+                <div class="content">
+                    <div class="column">
+                        <h2>Some title</h2>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum, accusamus, repudiandae numquam, itaque harum reprehenderit ab aliquid autem odit modi eligendi quo nostrum non natus! Rerum nisi tempore nobis.</li> 
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi animi nulla natus quod beatae dolorem, placeat maxime atque magni corporis eveniet debitis, voluptate autem dignissimos fugiat illo vitae, quas distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad alias numquam tenetur eligendi quos consequatur quam accusantium maiores expedita omnis, sit, iste dolore. Iure, at quia! Consequuntur, aspernatur inventore?</li>
+                        </ul>
+                    </div> 
+                </div>
+            </section>
+        </div>
+        <div id="paralax2" class="paralax-wrapper">
+            <section id="section3">
+                <h1>I am some text</h1>
+            </section>
+            <section id="section4">
+                <div class="content">
+                    <div class="column">
+                        <h2>Some title</h2>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum, accusamus, repudiandae numquam, itaque harum reprehenderit ab aliquid autem odit modi eligendi quo nostrum non natus! Rerum nisi tempore nobis.</li> 
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi animi nulla natus quod beatae dolorem, placeat maxime atque magni corporis eveniet debitis, voluptate autem dignissimos fugiat illo vitae, quas distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad alias numquam tenetur eligendi quos consequatur quam accusantium maiores expedita omnis, sit, iste dolore. Iure, at quia! Consequuntur, aspernatur inventore?</li>
+                        </ul>
+                    </div> 
+                </div>
+            </section>
+        </div>
+       
+    </main>
+</body>
+</html>

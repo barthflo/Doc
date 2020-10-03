@@ -19,6 +19,7 @@ header h1{
     font-weight:100;
     font-size:1.5em;
     color:var(--light);
+    width:max-content;
 }
 header p{
     font-family:var(--main-font);
@@ -118,7 +119,7 @@ header h1 a{
 
 @media screen and (min-width:426px){
     header h1{
-        width: max-content;
+        width: auto;
         font-size:2em;
     }
 }
@@ -129,7 +130,7 @@ header h1 a{
     }
     #menu-desktop{
         display:block;
-        width:50%;
+        width:auto;
     }
     #menu-desktop ul{
         display:flex;
@@ -151,9 +152,10 @@ header h1 a{
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        width:60%;
+        width:auto;
     }
     .infos-container p{
         font-size:.8em;
+        padding-right: var(--spacing);
     }
 }

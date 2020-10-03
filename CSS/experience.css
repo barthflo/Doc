@@ -1,51 +1,33 @@
 
-/*  ici paramètre "main" ajouté mais à enlever si merge */
-
-
-main { 
-    padding: 0px;
-    margin:0px;
-}
-
-/* Bloc expérience */
 #experience{
-    text-align:center;
-    align-items: center;
-    
-    
-
-
+    height:100vh;
+    display:flex;
+    /* flex-wrap:wrap; */
+    justify-content:center;
+    align-items:center;
 }
 
-#experience h2 {
-
-    order: 2;
-    padding-right: var(--spacing-medium);
-    
+#experience .work-experience{
+    padding: 0 var(--spacing-large);
+    width:100%;
 }
 
-
-.work-experience h3{
+#experience .work-experience h3{
     color: var(--dark);
-    text-align:left;
 }    
 
-
-.work-experience li {
-                 
-    text-align: left;
-    list-style: none;
+#experience .work-experience li {             
+    text-align: justify;
     letter-spacing: 2px;
-    padding-left: var(--spacing-medium);
                     
 }
 
 .work-experience article {
-
     height: auto;
+    min-height:fit-content;
 }
          
-                
+/*                 
 .delorean img { 
     display: block;
     margin-right: auto;
@@ -54,56 +36,29 @@ main {
     height:250px;
     border-radius: 100%;
     
-}    
-
-
-
-
-
-
-/* Paramètres Flexboxs , le #experience doit passer en flex si on définit breakpoint*/
-
-.logos  {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0px;
-}    
-
-.expertiseFont p, .textDiplomes p{
-    text-align:center;
-}    
+}     */
 
 
 /* Media query, a supprimer si dispensable */
  
-@media screen and (min-width: 767px){
-
-    .logos  {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 0px;
-    }    
-
+@media screen and (min-width: 769px){
     #experience{
-        display:flex;
+        flex-wrap: nowrap;
         justify-content:space-around;
         min-height: auto;
 
     }      
-
-
-    /* display flex du GIF si on reserre l'écran */
-    .delorean img {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        flex-wrap: wrap;
+    #experience .title{
+        order: 2;
+        padding-left: var(--spacing-medium);
+    }
+    #experience .content-container{
+        width:70%;
+        border-right: var(--main-color) solid var(--spacing);
+        text-align:left;
+    }
+    #experience .sections-container{
+        flex-wrap: nowrap;
     }
     
 }    

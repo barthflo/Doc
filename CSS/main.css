@@ -18,6 +18,7 @@
     --main-color:rgb(170, 17, 29);
     --secondary-color: rgb(255, 122, 14);
     --light: #fdf7ef; 
+    --light-transparent: #fdf7eff0;
     --dark : #122429;
     --spacing : 8px;
     --spacing-medium : calc(var(--spacing) * 2);
@@ -38,12 +39,24 @@ main{
     padding : 0;
 }
 section{
+    position:relative;
     width:100%;
     min-height:100vh;
-    padding: 0 var(--spacing);
     text-align:center;
+    /* margin-bottom : var(--spacing-large); */
 }
+.sections-container{
+    width:100%;
+    min-height: fit-content;
+    height:80%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    background-color: var(--light-transparent);
+    padding:var(--spacing-medium);
 
+}
 h2, h3, h4, h5, h6{
     font-family: var(--secondary-font);
     color: var(--secondary-color);
@@ -53,3 +66,21 @@ p, ul, ol, li, a{
     font-family: var(--main-font);
     letter-spacing: 2px;
 }
+
+ul{
+    padding:0;
+}
+
+.paralax-wrapper{
+    background-image: url("../Assets/timetravel1.png");
+    position:relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;  
+}
+
+#paralax2{
+    background-image: url("../Assets/timetravel2.png");
+}
+  
