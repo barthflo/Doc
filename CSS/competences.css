@@ -1,9 +1,0 @@
-#competences .titre{
-    color: black;
-}
-#competences p{
-    padding: 0 var(--spacing);
-}
-#competences h2{
-    padding-bottom: 20;
-}
