@@ -196,13 +196,16 @@
             <div class="contact-form">
                 <h2>Contact</h2>
                 <form class="form">
-                    <input type="name" placeholder="Votre Nom" class="formulary" required><label for=""></label>
-                    <input type="text" placeholder="société" class="formulary"><label for=""></label>
-                    <input type="text" placeholder="0601020304" class="formulary" required><label for=""></label>
-                    <input type="email" placeholder="nom@email.com" class="formulary" required><label for=""></label>
-                    <textarea placeholder="Votre message" class="formulary"></textarea>
-                    <button>Envoyer</button>
-                    
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Dupont" class="formulary" required>
+                    <label for="society">Société</label>
+                    <input type="text" id="society" placeholder="Société S.A" class="formulary" required>
+                    <label for="phone">Téléphone</label>
+                    <input type="text" id="phone" placeholder="0601020304" class="formulary" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="nom@email.com" class="formulary" required>
+                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <button>Envoyer</button>    
                 </form>
             </div>
             
@@ -217,6 +220,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti neque magnam od</p>    
                     </div>
                 </article>
+                <hr>
                 <article class="quote-card">
                     <figure>
                         <img src="Assets/biff.jpg" alt="picture of marty macfly">
@@ -226,6 +230,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti neque magnam od</p>    
                     </div>
                 </article>
+                <hr>
                 <article class="quote-card">
                     <figure>
                         <img src="Assets/einstein.jpg" alt="picture of marty macfly">
