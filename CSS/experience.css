@@ -7,6 +7,15 @@
     align-items:center;
 }
 
+#experience .title{
+    display:flex;
+    align-items:center;
+    height:150px;
+    background-image: url('../Assets/physics.png');
+    background-repeat:no-repeat;
+    background-position: top;
+    background-size:150px;
+}
 #experience .work-experience{
     padding: 0 var(--spacing-large);
     width:100%;
@@ -59,6 +68,8 @@
     }
     #experience .sections-container{
         flex-wrap: nowrap;
+        background-position:right;
+        background-size:350px;
     }
     
 }    

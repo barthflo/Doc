@@ -19,7 +19,7 @@ header h1{
     font-weight:100;
     font-size:1.5em;
     color:var(--light);
-    width:max-content;
+    width:auto;
 }
 header p{
     font-family:var(--main-font);
@@ -58,7 +58,10 @@ header h1 a{
     display:flex;
     flex-direction:column;
     position:absolute;
-    bottom:0;
+    bottom:var(--spacing-medium);
+}
+.infos-container p:nth-child(3){
+    order:4;
 }
 
 .infos-container i{
@@ -71,6 +74,9 @@ header h1 a{
     display:flex;
     flex-direction:column;
     align-items:flex-end;
+}
+#menu-mobile{
+    width:max-content;
 }
 .hamburger{
     margin-top:var(--spacing);
@@ -119,12 +125,11 @@ header h1 a{
 
 @media screen and (min-width:426px){
     header h1{
-        width: auto;
         font-size:2em;
     }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:872px){
     .hamburger{
         display:none;
     }
@@ -138,6 +143,7 @@ header h1 a{
     }
     header li{
         display:inline;
+        font-size:.8em;
     }
     .hidden-mobile{
         display:block;
@@ -148,7 +154,8 @@ header h1 a{
     .infos-container{
         position:absolute;
         right: 0;
-        padding-right: var(--spacing);
+        bottom:0;
+        padding-right: var(--spacing-medium);
         display:flex;
         flex-direction:row;
         justify-content:space-between;
