@@ -1,0 +1,40 @@
+#competences .titre{
+    color: black;
+}
+#competences p{
+    text-align: left;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 426px){
+#competences{
+    display: flex;
+    flex-direction: row-reverse;    
+}
+#competences h2{
+    margin-top: 0;
+}
+}
+@media screen and (min-width: 769px){
+#competences p{
+    /* padding: 0 var(--spacing); */
+    text-align: left;
+    margin-left: 5px;
+    padding: 0 30px 0 30px;
+}
+#competences h2{
+margin-top: 0;
+
+}
+#competences h3{
+    font-family: var(--secondary-font);
+    margin-top: 0;
+}
+#competences{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#competences i{
+    margin: 0px;
+} 
+}
