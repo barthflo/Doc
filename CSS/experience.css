@@ -1,23 +1,14 @@
 
 #experience{
-    height:100vh;
     display:flex;
-    /* flex-wrap:wrap; */
     justify-content:center;
     align-items:center;
 }
 
-#experience .title{
-    display:flex;
-    align-items:center;
-    height:150px;
+#experience .titles{
     background-image: url('../Assets/physics.png');
-    background-repeat:no-repeat;
-    background-position: top;
-    background-size:150px;
 }
 #experience .work-experience{
-    padding: 0 var(--spacing-large);
     width:100%;
 }
 
@@ -54,10 +45,8 @@
     #experience{
         flex-wrap: nowrap;
         justify-content:space-around;
-        min-height: auto;
-
     }      
-    #experience .title{
+    #experience .titles{
         order: 2;
         padding-left: var(--spacing-medium);
     }

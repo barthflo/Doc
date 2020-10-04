@@ -42,14 +42,13 @@ main{
 section{
     position:relative;
     width:100%;
-    min-height:100vh;
     text-align:center;
-    /* margin-bottom : var(--spacing-large); */
+    padding-bottom:var(--spacing-medium);
 }
 .sections-container{
     width:100%;
-    height:fit-content;
     min-height:80%;
+    height:fit-content;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -72,6 +71,17 @@ ul{
     padding:0;
 }
 
+.titles{
+    display:flex;
+    align-items:center;
+    height:150px;
+    background-repeat:no-repeat;
+    background-position: top;
+    background-size:150px;
+}
+.content-container{
+    padding: var(--spacing-medium);
+}
 .paralax-wrapper{
     background-image: url("../Assets/timetravel1.png");
     position:relative;
@@ -85,3 +95,18 @@ ul{
     background-image: url("../Assets/timetravel2.png");
 }
   
+
+@media screen and (min-width: 769px){
+    section{
+        padding-bottom:0;
+        margin-bottom:0;
+        height:100vh;
+    }
+    .sections-container{
+        min-height:80%;
+        max-height:90%;
+    }
+    .content-container{
+        width:70%;
+    }
+}

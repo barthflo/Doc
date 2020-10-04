@@ -5,8 +5,9 @@
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
-    min-height:90vh;
+    margin-bottom: var(--spacing-medium);
 }
+
 .text{
     padding-bottom:var(--spacing-medium);
 }
