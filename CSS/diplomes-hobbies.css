@@ -1,0 +1,114 @@
+/* Diplomes */
+#education{
+    display:flex;
+    align-items:center;
+}
+
+.education-container, .hobbies-container{
+    width:100%;
+}
+
+.education-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+#education .etudes-card{
+    margin-bottom:calc(var(--spacing-medium)*4);
+}
+
+#education .titles{
+    background-image:url('../Assets/brain2.png');
+    background-position:top;
+    align-items:flex-end;
+    height:200px;
+
+}
+
+#education h3{
+    font-size:1em;
+    color:black;
+    text-align:center;
+}
+
+
+/* Hobbies */
+
+
+
+
+
+@media screen and (min-width:769px){
+    #education{
+        flex-wrap: nowrap;
+    }
+    #education .titles{
+        order:2;
+    }
+    #education .education-content{
+        padding: var(--spacing-medium);
+        border-right: var(--spacing) solid var(--main-color);
+    }
+    #education .etudes-card:nth-of-type(4){
+        margin-bottom:0;
+    }
+    /* .education-container, .hobbies-container{
+        width:50%;
+    } */
+}
+/* Carousel
+.slide-img {
+    display: none;
+}
+
+.hobbies-slide {
+    max-width: 1000px;
+    max-height: 320px;
+    position: relative;
+    margin: auto;
+
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.7s ease;
+}
+
+.active {
+    background-color: lightcoral;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+.slide-img {
+    height: 100%;
+    width: 100%;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+} */
+

@@ -27,7 +27,12 @@
 }
 
 @media screen and (min-width: 769px){
+    #competences{
+        min-height:100vh;
+        height:fit-content;
+    }
     #competences .sections-container{
+        min-height:inherit;
         max-height:fit-content;
         flex-wrap:nowrap;
     }
@@ -46,4 +51,4 @@
         width:50%;
         padding: 0 var(--spacing-medium);
     }
-
+}

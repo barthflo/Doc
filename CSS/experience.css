@@ -55,6 +55,9 @@
         border-right: var(--main-color) solid var(--spacing);
         text-align:left;
     }
+    #experience .content-container ul{
+        padding-left:var(--spacing-medium);
+    }
     #experience .sections-container{
         flex-wrap: nowrap;
         background-position:right;
