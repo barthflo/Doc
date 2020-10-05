@@ -114,6 +114,7 @@ ul{
         min-height:80%;
         max-height:90%;
         flex-wrap:nowrap;
+        justify-content:space-around;
     }
     .content-container{
         width:70%;

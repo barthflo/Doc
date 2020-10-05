@@ -19,11 +19,10 @@
 }
 
 #education .titles{
-    background-image:url('../Assets/brain2.png');
+    background-image:url('../Assets/braingear.png');
     background-position:top;
     align-items:flex-end;
     height:200px;
-
 }
 
 #education h3{
@@ -34,54 +33,48 @@
 
 
 /* Hobbies */
-
-
-
-
-
-@media screen and (min-width:769px){
-    #education{
-        flex-wrap: nowrap;
-    }
-    #education .titles{
-        order:2;
-    }
-    #education .education-content{
-        padding: var(--spacing-medium);
-        border-right: var(--spacing) solid var(--main-color);
-    }
-    #education .etudes-card:nth-of-type(4){
-        margin-bottom:0;
-    }
-    /* .education-container, .hobbies-container{
-        width:50%;
-    } */
+#hobbies .sections-container{
+    padding:0 0 var(--spacing-medium);
 }
-/* Carousel
-.slide-img {
-    display: none;
+#hobbies .titles{
+    background-image: url('../Assets/timemachine.png');
+    background-size:cover;
+}
+#hobbies .hobbies-content{
+    height:400px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    opacity:.8;
 }
 
-.hobbies-slide {
-    max-width: 1000px;
-    max-height: 320px;
-    position: relative;
-    margin: auto;
-
+#hobbies .slide-img{
+    width:100%;
+    height:80%;
+    border-top:var(--spacing) solid var(--main-color);
+    border-bottom:var(--spacing) solid var(--main-color);
+}
+#hobbies .slide-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.dot {
-    height: 16px;
-    width: 16px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.7s ease;
+#hobbies .dot-container{
+    display:flex;
+    justify-content:space-evenly;
+    width:50%;
+}
+#hobbies .dot{
+    height:var(--spacing);
+    width:var(--spacing);
+    background-color:var(--secondary-color);
+    border-radius:50px;
 }
 
-.active {
-    background-color: lightcoral;
+#hobbies .dot.active{
+    background-color: var(--main-color);
 }
 
 .fade {
@@ -92,23 +85,47 @@
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4;}
+    from {opacity: .8;}
     to {opacity: 1;}
 }
 
 @keyframes fade {
-    from {opacity: .4;}
+    from {opacity: .8;}
     to {opacity: 1;}
 }
 
-.slide-img {
-    height: 100%;
-    width: 100%;
+
+
+@media screen and (min-width:769px){
+    #education{
+        flex-wrap: nowrap;
+    }
+    #education .titles{
+        order:2;
+        width:30%;
+    }
+    #education .education-content{
+        padding: var(--spacing-medium);
+        border-right: var(--spacing) solid var(--main-color);
+        width:70%;
+    }
+    #education .etudes-card:nth-of-type(4){
+        margin-bottom:0;
+    }
+
+    #hobbies .sections-container{
+        padding: var(--spacing-medium);
+    }
+
+    #hobbies .titles{
+        width:30%;
+        background-size: contain;
+    }
+    #hobbies .hobbies-content{
+        border-left: var(--main-color) solid var(--spacing);
+    }
+    #hobbies .slide-img{
+        border:none;
+        width:80%;
+    }
 }
-
-.slide-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-} */
-
