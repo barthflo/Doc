@@ -5,4 +5,4 @@ document.getElementById("faqbtn").addEventListener("click", function(){
     } else {
         faq.style.display="none";
     }
-})
+});
