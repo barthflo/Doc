@@ -81,8 +81,8 @@
     font-size: 32px;
     font-weight: bold;
     font-family: var(--main-font);
-    padding-top: 16px;
     padding-bottom: 32px;
+    margin-top: 0px;
 }
 
 .atom {
@@ -95,5 +95,9 @@
 .delo {
     width: 128px;
     height: 128px;
+}
+
+#faqbtn {
+    width: 65px;
 }
 
