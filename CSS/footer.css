@@ -102,6 +102,7 @@
 
 #faqbtn {
     width: 65px;
+    border-radius: 20px;
 }
 
 .faqWrapper {
