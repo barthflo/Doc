@@ -1,11 +1,9 @@
-@import "profile.css";
 @import "header.css";
+@import "profile.css";
 @import "experience.css";
-@import "footer.css";
-@import "caroussel.css";
 @import "domaines-expertise.css";
 @import "diplomes-hobbies.css";
-
+@import "footer.css";
 
 /* Fonts libraries */
 @import "contact.css";
