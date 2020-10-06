@@ -115,6 +115,7 @@
 
     #hobbies .sections-container{
         padding: var(--spacing-medium);
+        min-height:90%;
     }
 
     #hobbies .titles{

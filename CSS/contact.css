@@ -4,7 +4,7 @@
     flex-wrap:wrap;
     flex-direction: column-reverse;
 }
-
+/* Contact Form */
 #contact .contact-form{
     background-color:var(--dark);
     padding: var(--spacing-medium);
@@ -75,7 +75,24 @@ button {
     margin-left: 5px;
 }
 
-
+/* References */
+.references{
+    padding-bottom:var(--spacing-large);
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.references .titles{
+    width:100%;
+    background-image: url('../Assets/docetmarty.jpeg');
+    background-size:auto;
+    margin:var(--spacing-medium) 0;
+}
+.references .quote-card {
+    margin-bottom: var(--spacing-medium);
+    padding:0 var(--spacing-medium);
+}
 .references img{
     object-fit: cover;
     object-position: center;
@@ -86,9 +103,10 @@ button {
     /* box-shadow : calc(var(--spacing)/2) calc(var(--spacing)/2) var(--spacing-large) var(--dark); */
 }
 
-.quote-card {
-    margin-bottom: var(--spacing-medium);
-    padding:0 var(--spacing-medium);
+.references h3, .references p{
+    font-family: var(--main-font);
+    text-align: center;
+    color: var(--dark);
 }
 
 hr{
@@ -98,14 +116,23 @@ hr{
 }
 
 
-.references h3, .references p{
-    font-family: var(--main-font);
-    text-align: center;
-    color: var(--dark);
-}
+
 
 @media screen and (min-width: 769px){
-    
+    .references{
+        flex-wrap:nowrap;
+        align-items:center;
+        padding:var(--spacing-large);
+    }
+    .references .titles{
+        margin: 0 var(--spacing-medium) 0 0;
+    }
+    .references .quote-card:first-of-type{
+        border-left:var(--spacing) solid var(--main-color);
+    }
+    hr{
+        display:none;
+    }
 }
 
 
