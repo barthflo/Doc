@@ -34,7 +34,7 @@
 
 /* Hobbies */
 #hobbies .sections-container{
-    padding:0 0 var(--spacing-medium);
+    padding:var(--spacing-medium) 0;
 }
 #hobbies .titles{
     background-image: url('../Assets/timemachine.png');
