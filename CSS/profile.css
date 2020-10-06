@@ -1,78 +1,58 @@
-.text p{
-    padding: 0 var(--spacing);
-    /* background-color: rgb(226, 218, 208); */
-    /* font-family: var(--main-font) */
-}
-#profile .img-profile{
-    width: 100%;
-    height: 100%;
-}
 #profile {
     padding: 0;
+    background: var(--light-transparent);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: var(--spacing-medium);
+}
+.text{
+    padding-bottom:var(--spacing-medium);
+}
+.text p{
+    padding: 0 var(--spacing-large);
+    text-align: justify;
 }
 
-#profile img{
+#profile .img-container{
     width: 100%;
     height: 100vh;
+}
+
+#profile .img-container img{
+    width: 100%;
+    height: 100%;
     object-fit: cover; 
 }
-/* #profile img:hover{
-    width: 130%; 
-    transition: width 5s ease-in-out ;
-    transform: rotate(10deg) scale(1.5); 
-    transform: perspective(300px) rotateY(45deg);
-} */
 
 @media screen and (min-width: 426px){
-    #profile {
-        /* width: 250px; */
-        display: flex;
-        justify-content: space-between;
-        /* background-color: royalblue; */
-        align-items: center;
-        height:100vh;
+    #profile{
+        align-items: stretch;
     }
-    p {
-        text-align: justify;
-
+    #profile .img-container{
+        width: 100%;
+        height:200px;
     }
     .text{
-        padding: 0 var(--spacing-medium);
-        width: 160%;
-        
-    }
-    #profile img {
-        height: 100%;
-        width: 100%;
-        border: none;
-        border-right: var(--spacing) solid rgb(255, 104, 142) ;
-        border-radius: 0%;
-        padding: 0 var(--spacing) 0 0;
+        width:100%;
     }
 } 
 @media screen and (min-width: 769px){
     #profile {
-        display: flex;
+        flex-wrap:nowrap;
         justify-content: space-between;
-        /* background-color: royalblue; */
-        align-items: center;
+        align-items:center;
+        margin-bottom: 0;
+    }
+    #profile .img-container{
         height:100vh;
     }
-    #profile p {
-        text-align: justify;
-
-    }
-    #profile .text{
-        padding: 0 var(--spacing-medium);
+    .text{
         width: 160%;
-        
     }
-    #profile img {
-        height: 100%;
-        width: 100%;
-        border: none;
-        border-right: var(--spacing) solid rgb(255, 104, 142) ;
-        border-radius: 0%;
-        padding: 0 var(--spacing) 0 0;
+
+    #profile .img-container img {
+        border-right: var(--spacing) solid var(--main-color);    
     }
 }

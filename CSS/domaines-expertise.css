@@ -1,9 +1,11 @@
-#domaines-expertise .titre{
-    color: black;
-}
-#domaines-expertise p{
-    text-align: left;
-    margin-left: 20px;
+
+#competences .titles{
+    background-image: url('../Assets/equation.png');
+    background-position: 50%;
+    background-size:cover;
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 #domaines-expertise h3{
     font-family: var(--secondary-font);
@@ -11,41 +13,47 @@
     }
 
 
-@media screen and (min-width: 426px){
-#domaines-expertise{
-    display: flex;
-    flex-direction: row; 
-    padding-top: 80px;
-    padding-bottom: 80px;   
-    }
-#domaines-expertise p{
-    text-align: right;
-    margin-left: 20px;
-    margin-right: 20px;
+#competences .competences-card{
+    margin-bottom:var(--spacing-large);
 }
-#domaines-expertise h2{
-    border-right: var(--spacing) solid rgb(255, 104, 142);
-    padding-right: 8px;
-    padding-left: 8px;
+#competences .header-card{
+    padding-top:var(--spacing-medium)
 }
+#competences .competences-card .fas{
+    font-size:2em;
+}
+#competences .competences-card h3{
+    color:var(--dark);
+    margin-top:0;
 }
 
+#competences .competences-card p{
+    text-align: justify;
+}
 
 @media screen and (min-width: 769px){
-#domaines-expertise p{
-    /* padding: 0 var(--spacing); */
-    text-align: right;
-    margin-left: 5px;
-    padding: 0 30px 0 30px;
+    #competences{
+        min-height:100vh;
+        height:fit-content;
     }
-#domaines-expertise h2{
-margin-top: 0;
+    #competences .sections-container{
+        min-height:inherit;
+        max-height:fit-content;
+        flex-wrap:nowrap;
     }
-#domaines-expertise{
-    display: flex;
-    flex-direction: row;
+    #competences .titles{
+        width:30%;
+        margin-right:var(--spacing);
     }
-#domaines-expertise i{
-    margin: 0px;
-    } 
+    #competences .content-container{
+        border-left: var(--spacing) solid var(--main-color);
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    #competences .competences-card{
+        width:50%;
+        padding: 0 var(--spacing-medium);
+    }
 }
