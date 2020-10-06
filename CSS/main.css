@@ -102,7 +102,8 @@ ul{
     background-image: url('../Assets/timetravel1.png')
 }  
 #paralax5{
-    background-image:url('../Assets/tableau.jpg')
+    background-image:url('../Assets/convecteur.jpg');
+    padding-bottom:var(--spacing-large);
 }
 
 @media screen and (min-width: 769px){
@@ -119,5 +120,8 @@ ul{
     }
     .content-container{
         width:70%;
+    }
+    #paralax5{
+        padding-bottom:calc(var(--spacing-large)*2);
     }
 }

@@ -1,18 +1,19 @@
-#contact{
+#paralax5 .sections-container{
     padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column-reverse;
 }
-
-.contact-form{
+/* Contact Form */
+#contact .contact-form{
     background-color:var(--dark);
     padding: var(--spacing-medium);
-}
-form {
-    margin: 0 auto;
-    width: 80%;
+    width:100%;
 }
 
-h2 {
-    font-family: var(--secondary-font);
+#contact form{
+    width:80%;
+    margin: 0 auto;
 }
 
 .formulary {
@@ -40,27 +41,27 @@ h2 {
     transition: 0.5s;
 }
 
-#name::placeholder:focus {
-    color: white;
+#name:focus {
+    color: var(--light);
 }
 
 .formulary:focus {
-    background-color: rgb(255, 122, 14);
-    color: white;
+    background-color:var(--secondary-color);
+    color: var(--light);
 }
 
 textarea:focus{
-    background-color: rgb(255, 122, 14);
-    color: white;
+    background-color:var(--secondary-color);
+    color: var(--light);
 }
 
 textarea {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: var(--spacing);
     font-family: "Righteous", cursive;
     border-radius: 10px;
-    border: solid rgb(255, 122, 14);
-    padding-left: 5px;
+    border: solid var(--secondar-color) calc(var(--spacing)/6);
+    padding-left: var(--spacing);
     transition: all 0.5s ease;
 }
 
@@ -97,7 +98,24 @@ textarea {
     left: 0;
 }
 
-
+/* References */
+.references{
+    padding-bottom:var(--spacing-large);
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.references .titles{
+    width:100%;
+    background-image: url('../Assets/docetmarty.jpeg');
+    background-size:auto;
+    margin:var(--spacing-medium) 0;
+}
+.references .quote-card {
+    margin-bottom: var(--spacing-medium);
+    padding:0 var(--spacing-medium);
+}
 .references img{
     object-fit: cover;
     object-position: center;
@@ -108,9 +126,10 @@ textarea {
     /* box-shadow : calc(var(--spacing)/2) calc(var(--spacing)/2) var(--spacing-large) var(--dark); */
 }
 
-.quote-card {
-    margin-bottom: var(--spacing-medium);
-    padding:0 var(--spacing-medium);
+.references h3, .references p{
+    font-family: var(--main-font);
+    text-align: center;
+    color: var(--dark);
 }
 
 hr{
@@ -120,29 +139,22 @@ hr{
 }
 
 
-.references h3, .references p{
-    font-family: var(--main-font);
-    text-align: center;
-    color: var(--dark);
-}
+
 
 @media screen and (min-width: 769px){
-    #contact {
-        display: flex;
-        justify-content : center;
-        align-items: stretch;
-        min-height: fit-content;
+    .references{
+        flex-wrap:nowrap;
+        align-items:center;
+        padding:var(--spacing-large);
     }
-    .contact-form{
-        width:50%;
-    } 
-    .quote-card{
-        display:flex;
-        justify-content:space-around;
+    .references .titles{
+        margin: 0 var(--spacing-medium) 0 0;
     }
-    .references h3, .references p{
-        font-family: var(--main-font);
-        text-align: left;
+    .references .quote-card:first-of-type{
+        border-left:var(--spacing) solid var(--main-color);
+    }
+    hr{
+        display:none;
     }
 }
 
