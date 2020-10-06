@@ -90,10 +90,15 @@ button {
     padding:0 var(--spacing-medium);
 }
 
-hr{
-    width: 25%;
-    color: var(--dark);
+#contact hr{
+    width: 150px;
+    color: var(--main-color);
     margin-bottom: var(--spacing-large);
+    height: 5px;
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+
 }
 
 
@@ -102,6 +107,7 @@ hr{
     text-align: center;
     color: var(--dark);
 }
+
 
 @media screen and (min-width: 769px){
     #contact {
