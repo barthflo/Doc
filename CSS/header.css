@@ -60,10 +60,21 @@ header h1 a{
     position:absolute;
     bottom:var(--spacing-medium);
 }
+.infos-container p{
+    font-size:.7em;
+}
 .infos-container p:nth-child(3){
     order:4;
 }
-
+.infos-container a{
+    padding:0;
+    font-family: var(--main-font);
+    text-decoration: underline;
+    color:var(--light);
+}
+.infos-container a:hover{
+    color:var(--main-color);
+}
 .infos-container i{
     padding-right: var(--spacing);
 }

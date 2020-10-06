@@ -1,11 +1,9 @@
-@import "profile.css";
 @import "header.css";
+@import "profile.css";
 @import "experience.css";
-@import "footer.css";
-@import "caroussel.css";
 @import "domaines-expertise.css";
 @import "diplomes-hobbies.css";
-
+@import "footer.css";
 
 /* Fonts libraries */
 @import "contact.css";
@@ -43,7 +41,7 @@ section{
     position:relative;
     width:100%;
     text-align:center;
-    padding-bottom:var(--spacing-medium);
+    padding-bottom:var(--spacing-large);
 }
 .sections-container{
     width:100%;
@@ -101,8 +99,11 @@ ul{
     background-image: url('../Assets/timetravel3.png');
 }
 #paralax4{
-    background-image: url('../Assets/docpicture.png')
+    background-image: url('../Assets/timetravel1.png')
 }  
+#paralax5{
+    background-image:url('../Assets/tableau.jpg')
+}
 
 @media screen and (min-width: 769px){
     section{
