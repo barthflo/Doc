@@ -1,0 +1,59 @@
+
+#competences .titles{
+    background-image: url('../Assets/equation.png');
+    background-position: 50%;
+    background-size:cover;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+#domaines-expertise h3{
+    font-family: var(--secondary-font);
+    margin-top: 0,30rem;
+    }
+
+
+#competences .competences-card{
+    margin-bottom:var(--spacing-large);
+}
+#competences .header-card{
+    padding-top:var(--spacing-medium)
+}
+#competences .competences-card .fas{
+    font-size:2em;
+}
+#competences .competences-card h3{
+    color:var(--dark);
+    margin-top:0;
+}
+
+#competences .competences-card p{
+    text-align: justify;
+}
+
+@media screen and (min-width: 769px){
+    #competences{
+        min-height:100vh;
+        height:fit-content;
+    }
+    #competences .sections-container{
+        min-height:inherit;
+        max-height:fit-content;
+        flex-wrap:nowrap;
+    }
+    #competences .titles{
+        width:30%;
+        margin-right:var(--spacing);
+    }
+    #competences .content-container{
+        border-left: var(--spacing) solid var(--main-color);
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    #competences .competences-card{
+        width:50%;
+        padding: 0 var(--spacing-medium);
+    }
+}

@@ -3,7 +3,8 @@
 @import "experience.css";
 @import "footer.css";
 @import "caroussel.css";
-@import "competences-hobbies.css";
+@import "domaines-expertise.css";
+@import "diplomes-hobbies.css";
 
 
 /* Fonts libraries */
@@ -15,9 +16,10 @@
     --main-font: "Poiret One", cursive;
     --h1:"MuseoModerno", cursive;
     --secondary-font: "Righteous", cursive;
-    --main-color:rgb(255, 104, 142);
+    --main-color:rgb(170, 17, 29);
     --secondary-color: rgb(255, 122, 14);
     --light: #fdf7ef; 
+    --light-transparent: #fdf7eff0;
     --dark : #122429;
     --spacing : 8px;
     --spacing-medium : calc(var(--spacing) * 2);
@@ -38,18 +40,83 @@ main{
     padding : 0;
 }
 section{
+    position:relative;
     width:100%;
-    min-height:100vh;
-    padding: 0 var(--spacing);
     text-align:center;
+    padding-bottom:var(--spacing-medium);
+}
+.sections-container{
+    width:100%;
+    min-height:80%;
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    background-color: var(--light-transparent);
+    padding:var(--spacing-medium);
 }
 
 h2, h3, h4, h5, h6{
     font-family: var(--secondary-font);
     color: var(--secondary-color);
+    text-transform: capitalize;
 }
 
 p, ul, ol, li, a{
     font-family: var(--main-font);
     letter-spacing: 2px;
+}
+
+ul{
+    padding:0;
+}
+
+.titles{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:150px;
+    background-repeat:no-repeat;
+    background-position: top;
+    background-size:150px;
+}
+.content-container{
+    padding: var(--spacing-medium);
+}
+.paralax-wrapper{
+    position:relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;  
+}
+#paralax2{
+    background-image: url("../Assets/timetravel2.png");
+}
+#paralax1{
+    background-image: url("../Assets/Maurice-Blaine-Delorean-600x369.png");
+}
+#paralax3{
+    background-image: url('../Assets/timetravel3.png');
+}
+#paralax4{
+    background-image: url('../Assets/docpicture.png')
+}  
+
+@media screen and (min-width: 769px){
+    section{
+        padding-bottom:0;
+        margin-bottom:0;
+        height:100vh;
+    }
+    .sections-container{
+        min-height:80%;
+        max-height:90%;
+        flex-wrap:nowrap;
+        justify-content:space-around;
+    }
+    .content-container{
+        width:70%;
+    }
 }
