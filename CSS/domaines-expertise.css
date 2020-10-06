@@ -7,6 +7,11 @@
     display:flex;
     justify-content:center;
 }
+#domaines-expertise h3{
+    font-family: var(--secondary-font);
+    margin-top: 0,30rem;
+    }
+
 
 #competences .competences-card{
     margin-bottom:var(--spacing-large);
