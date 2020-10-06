@@ -43,7 +43,7 @@ section{
     position:relative;
     width:100%;
     text-align:center;
-    padding-bottom:var(--spacing-medium);
+    padding-bottom:var(--spacing-large);
 }
 .sections-container{
     width:100%;
@@ -101,8 +101,11 @@ ul{
     background-image: url('../Assets/timetravel3.png');
 }
 #paralax4{
-    background-image: url('../Assets/docpicture.png')
+    background-image: url('../Assets/timetravel1.png')
 }  
+#paralax5{
+    background-image:url('../Assets/tableau.jpg')
+}
 
 @media screen and (min-width: 769px){
     section{
