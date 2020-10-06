@@ -1,4 +1,4 @@
-
+/* footer box*/
 .foot {
     background-color: var(--dark);
     display: flex;
@@ -8,10 +8,13 @@
     width:100%;
     z-index: 1000;
 }
+
 .foot .fab, .foot .fas {
     color:var(--main-color);
     font-size: 16px;
 }
+
+/* icons social media */
 
 .icons {
     display: flex;
@@ -21,17 +24,17 @@
     list-style:none;
     margin-left:0;
     padding-left:0;
-
+    
 }
 
+/* icon to go back top */
 
-#faq{
-    background-color:var(--light-transparent);
-    padding: var(--spacing-large);
-    margin-top: var(--spacing-medium);
+.top {
+    width: 20%;
+    text-align: center;
 }
 
-
+/* faq button */
 .title-faq {
     border: var(--main-color);
     background-color: var(--main-color);
@@ -40,6 +43,13 @@
     color: #551a8b;
     font-weight: bold;
 }
+
+#faqbtn {
+    width: 65px;
+    border-radius: 20px;
+}
+
+/* faq when display */
 
 .hide {
     display: none;
@@ -54,13 +64,36 @@
     }
 }
 
+/* background faq */
 
-
-.top {
-    width: 20%;
-    text-align: center;
+#faq{
+    background-color:var(--light-transparent);
+    padding: var(--spacing-large);
+    margin-top: var(--spacing-medium);
 }
 
+@media screen and (min-width: 769px){
+    #faq {
+        background-color:var(--light-transparent);
+        padding: var(--spacing-large);
+        margin-top: var(--spacing-large);        
+    }
+}
+
+
+/* title faq */
+
+.foire {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    padding-bottom: 32px;
+    margin-top: 0px;
+    color: var(--dark);
+}
+
+/* questions answer icon */
 
 .question {
     font-family: var(--secondary-font);
@@ -78,15 +111,6 @@
     font-weight: bold;
 }
 
-.foire {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    font-family: var(--main-font);
-    padding-bottom: 32px;
-    margin-top: 0px;
-    color: var(--dark);
-}
 
 .atom {
     font-size: 32px;
@@ -100,10 +124,7 @@
     height: 128px;
 }
 
-#faqbtn {
-    width: 65px;
-    border-radius: 20px;
-}
+/* background behind faq */
 
 .faqWrapper {
     background-image: url("../Assets/dolodesert.jpg");
@@ -113,10 +134,3 @@
     width: 100%;
 }
 
-@media screen and (min-width: 769px){
-    #faq {
-        background-color:var(--light-transparent);
-        padding: var(--spacing-large);
-        margin-top: var(--spacing-large);        
-    }
-}
