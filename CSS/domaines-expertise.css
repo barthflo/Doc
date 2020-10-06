@@ -1,40 +1,51 @@
-#competences .titre{
+#domaines-expertise .titre{
     color: black;
 }
-#competences p{
+#domaines-expertise p{
     text-align: left;
     margin-left: 20px;
 }
+#domaines-expertise h3{
+    font-family: var(--secondary-font);
+    margin-top: 0,30rem;
+    }
+
 
 @media screen and (min-width: 426px){
-#competences{
+#domaines-expertise{
     display: flex;
-    flex-direction: row-reverse;    
+    flex-direction: row; 
+    padding-top: 80px;
+    padding-bottom: 80px;   
+    }
+#domaines-expertise p{
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-#competences h2{
-    margin-top: 0;
+#domaines-expertise h2{
+    border-right: var(--spacing) solid rgb(255, 104, 142);
+    padding-right: 8px;
+    padding-left: 8px;
 }
 }
+
+
 @media screen and (min-width: 769px){
-#competences p{
+#domaines-expertise p{
     /* padding: 0 var(--spacing); */
-    text-align: left;
+    text-align: right;
     margin-left: 5px;
     padding: 0 30px 0 30px;
-}
-#competences h2{
+    }
+#domaines-expertise h2{
 margin-top: 0;
-
-}
-#competences h3{
-    font-family: var(--secondary-font);
-    margin-top: 0;
-}
-#competences{
+    }
+#domaines-expertise{
     display: flex;
-    flex-direction: row-reverse;
-}
-#competences i{
+    flex-direction: row;
+    }
+#domaines-expertise i{
     margin: 0px;
-} 
+    } 
 }

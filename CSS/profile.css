@@ -16,12 +16,12 @@
     height: 100vh;
     object-fit: cover; 
 }
-#profile img:hover{
-    /* width: 130%; */
-    /* transition: width 5s ease-in-out ;
-    transform: rotate(10deg) scale(1.5); */
+/* #profile img:hover{
+    width: 130%; 
+    transition: width 5s ease-in-out ;
+    transform: rotate(10deg) scale(1.5); 
     transform: perspective(300px) rotateY(45deg);
-}
+} */
 
 @media screen and (min-width: 426px){
     #profile {
