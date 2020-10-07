@@ -94,12 +94,15 @@ textarea {
     animation: disapear .8s ease-in-out 2 alternate;
 } */
 .car-moving{
-    animation: move 1s ease-in .1s 1;
+    animation: move 1.4s ease-in .1s 1;
 }
 
 @keyframes move{
-    from{
-        transform : translateX(-55vw) ;
+    0%{
+        transform : translateX(0vw) ;
+    }
+    40%{
+        transform : translateX(0vw) translateY(-50px);
     }
     to{
         transform: translateX(55vw) translateY(-10vh) rotate(-10deg) scale(.9) ;
