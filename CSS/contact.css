@@ -14,6 +14,9 @@
 #contact form{
     width:80%;
     margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .formulary {
@@ -32,8 +35,7 @@
     color: var(--light);
     font-family: var(--main-font);
     padding-bottom: var(--spacing);
-    display: flex;
-    text-align: left;
+    align-self: flex-start;
 }
 
 #name::placeholder {
@@ -60,7 +62,7 @@ textarea {
     margin-bottom: var(--spacing);
     font-family: "Righteous", cursive;
     border-radius: 10px;
-    border: solid var(--secondar-color) calc(var(--spacing)/6);
+    border: calc(var(--spacing)/6) solid var(--secondary-color);
     padding-left: var(--spacing);
     transition: all 0.5s ease;
 }
@@ -86,7 +88,37 @@ textarea {
     position: relative;
     height: 40px;
     width: 140px;
-    margin: 0 auto;
+    margin: var(--spacing-medium) auto ;
+}
+/* .send{
+    animation: disapear .8s ease-in-out 2 alternate;
+} */
+.car-moving{
+    animation: move 1.4s ease-in .1s 1;
+}
+
+@keyframes move{
+    0%{
+        transform : translateX(0vw) ;
+    }
+    40%{
+        transform : translateX(0vw) translateY(-50px);
+    }
+    to{
+        transform: translateX(55vw) translateY(-10vh) rotate(-10deg) scale(.9) ;
+    }
+}
+
+@keyframes disapear{
+    to{
+        transform: translateX(70px);
+        width:100px;
+    }
+}
+.message-success{
+    color:var(--secondary-color);
+    font-family:var(--secondary-font);
+    margin:var(--spacing-medium);
 }
 
 #button-contact {
