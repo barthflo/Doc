@@ -39,9 +39,8 @@
     border: var(--main-color);
     background-color: var(--main-color);
     width: 30%;
-    font-family: var(--main-font);
-    color: #551a8b;
-    font-weight: bold;
+    font-family: var(--secondary-font);
+    color: var(--dark);
 }
 
 #faqbtn {
