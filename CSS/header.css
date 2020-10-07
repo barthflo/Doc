@@ -9,7 +9,7 @@ header{
     top:0;
     left:0;
     width: 100%;
-    z-index: 1000;
+    z-index: 3;
 }
 
 /* Typos */
@@ -154,7 +154,7 @@ header h1 a{
     #menu-desktop{
         display:block;
         width:auto;
-        padding-top:var(--spacing-medium);
+        padding-top:var(--spacing);
     }
     #menu-desktop ul{
         display:flex;

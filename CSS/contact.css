@@ -61,7 +61,7 @@ textarea {
     width: 100%;
     margin-bottom: var(--spacing);
     font-family: "Righteous", cursive;
-    border-radius: 10px;
+    border-radius: 15px;
     border: calc(var(--spacing)/6) solid var(--secondary-color);
     padding-left: var(--spacing);
     transition: all 0.5s ease;
@@ -90,9 +90,7 @@ textarea {
     width: 140px;
     margin: var(--spacing-medium) auto ;
 }
-/* .send{
-    animation: disapear .8s ease-in-out 2 alternate;
-} */
+
 .car-moving{
     animation: move 1.4s ease-in .1s 1;
 }
@@ -168,7 +166,7 @@ textarea {
     width: 150px;
     color: var(--main-color);
     margin-bottom: var(--spacing-large);
-    height: 5px;
+    height: 1px;
     background-color: var(--secondary-color);
     border: 0;
     border-radius: 5px;
@@ -182,11 +180,12 @@ textarea {
 @media screen and (min-width: 769px){
     .references{
         flex-wrap:nowrap;
-        align-items:center;
+        align-items:stretch;
         padding:var(--spacing-large);
     }
     .references .titles{
         margin: 0 var(--spacing-medium) 0 0;
+        align-self:center;
     }
     .references .quote-card:first-of-type{
         border-left:var(--spacing) solid var(--main-color);

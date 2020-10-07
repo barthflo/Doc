@@ -106,6 +106,10 @@ ul{
     padding-bottom:var(--spacing-large);
 }
 
+#paralax6{
+    background-image:url('../Assets/dolodesert.jpg');
+}
+
 @media screen and (min-width: 769px){
     section{
         padding-bottom:0;

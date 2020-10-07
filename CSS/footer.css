@@ -1,12 +1,8 @@
 /* footer box*/
 .foot {
-    background-color: var(--dark);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width:100%;
-    z-index: 1000;
+    z-index: 2;
+    position:relative;
 }
 
 .foot .fab, .foot .fas {
@@ -18,43 +14,37 @@
 
 .icons {
     display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-around;       
+    width: 100%;
+    justify-content: space-around;  
+    align-items:center;     
     list-style:none;
-    margin-left:0;
-    padding-left:0;
-    
-}
-
-/* icon to go back top */
-
-.top {
-    width: 20%;
-    text-align: center;
+    margin:0;
+    padding: var(--spacing);
+    background-color: var(--dark);
 }
 
 /* faq button */
-.title-faq {
-    border: var(--main-color);
-    background-color: var(--main-color);
-    width: 30%;
-    font-family: var(--main-font);
-    color: #551a8b;
-    font-weight: bold;
+.title-faq{
+    text-decoration: none;
 }
-
-#faqbtn {
-    width: 65px;
-    border-radius: 20px;
+.title-faq p{
+    font-size:.8em;
+    margin:0;
+    background:var(--main-color);
+    text-align: center;
+    padding: calc(var(--spacing)/2) var(--spacing);
+    font-family:var(--secondary-font);
+    border-radius:25px;
+    color:var(--dark);
 }
 
 /* faq when display */
 
-.hide {
-    display: none;
+.show {
+    visibility:visible !important;
     animation: fadein 3.5s;
     }
+    
 @keyframes fadein {
     from {
         opacity:0;
@@ -70,15 +60,11 @@
     background-color:var(--light-transparent);
     padding: var(--spacing-large);
     margin-top: var(--spacing-medium);
+    display:none;
+    overflow:hidden;
 }
 
-@media screen and (min-width: 769px){
-    #faq {
-        background-color:var(--light-transparent);
-        padding: var(--spacing-large);
-        margin-top: var(--spacing-large);        
-    }
-}
+
 
 
 /* title faq */
@@ -130,7 +116,15 @@
     background-image: url("../Assets/dolodesert.jpg");
     background-repeat: no-repeat ;
     background-size: cover;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
+@media screen and (min-width: 769px){
+    #faq {
+        margin-top: var(--spacing-large);        
+    }
+    .title-faq p{
+        font-size:1em;
+    }
+}
