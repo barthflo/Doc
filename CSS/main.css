@@ -110,13 +110,14 @@ ul{
     background-image:url('../Assets/dolodesert.jpg');
 }
 
-#profile:target, #experience:target, #competences:target, #education:target, #contacts:target{
+#profile:target, #experience:target, #competences:target, #education:target, #contacts:target, #about:target{
     padding-top:94px;
     margin-top:-94px;
 }
 #faq:target{
     padding-top:94px;
 }
+
 @media screen and (min-width: 769px){
     section{
         padding-bottom:0;

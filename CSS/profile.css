@@ -6,7 +6,81 @@
     justify-content:center;
     align-items:center;
     margin-bottom: var(--spacing-medium);
+    position:relative;
 }
+.downArrow{
+    position:absolute;
+    top:80vh;
+    color:var(--light);
+    width:40px;
+    height:40px;
+    background:var(--dark);
+    opacity:.8;
+    padding: 5px 0 0 2px;
+    border: 3px solid var(--light);
+    border-radius:50%;
+}
+.downArrow .fa{
+  font-size:1.5em;
+  color:var(--light);
+} 
+.bounce{
+    -moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+/* Boucing arrow animation */
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  /* ##################################### */
+
 .text{
     padding-bottom:var(--spacing-medium);
 }
@@ -36,6 +110,9 @@
     }
     .text{
         width:100%;
+    }
+    .downArrow{
+      display:none;
     }
 } 
 @media screen and (min-width: 769px){
